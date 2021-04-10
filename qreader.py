@@ -8,8 +8,10 @@ file.close()
 words = []
 word = ''
 
+os.system("clear")
+
 for i in range(len(text)):
-	if text[i] in ' .,':
+	if text[i] in ' .,\n':
 		words.append(word)
 		word = ''
 
@@ -24,7 +26,9 @@ for i in range(len(text)):
 #print(word)
 #print(words)
 
-for i in range(len(words)):
-	print(words[i])
-	time.sleep(0.2)
-	os.system("clear")
+while True:
+    for i in range(len(words)):
+    	print(words[i])
+    	time.sleep(0.2)
+    	os.system("clear")
+
